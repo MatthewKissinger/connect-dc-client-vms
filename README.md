@@ -28,13 +28,13 @@
 <h3>We will first learn about Ping and ICMP before tackling the tutorial.</h3>
 
 <h2>What does the Ping Command do?</h2>
-<p>Ping ...</p>
+<p>Ping is an internet program command that tests if an IP address exists and is able to accept ICMP requests.</p>
+<p>We will be using it in this tutorial to verify that the Domain Controller and Client computers are able to communicate and share a network together.</p>
 
 <h2>What is ICMP (Internet Control Message Protocol)?</h2>
-<p>ICMP ...</p>
+<p>ICMP is a protocol on the network layer used by network devices to diagnose communication issues. </p>
+<p>The ping command operates using ICMP. In order to use ping to request a connection we will have to activate ICMPv4 on the Domain Controller.</p>
 
-
-  
 <h3> 1) Connect to both the DC-1 and Client-1 Virtual Machines via Remote Desktop Connection</h3>
 <p>If you haven't already, here are the steps to do so in the previous tutorial: (https://github.com/MatthewKissinger/rmdc-to-azure-vm) </p>
 
@@ -48,7 +48,9 @@
 
 <p>The Private IP Address of my DC-1 says 10.0.0.4 (yours may be different)</p>
 
-<p>From the Remote Connection of Client-1, open Windows Powershell</p>
+<p>From the Remote Connection of Client-1, open Windows Powershell and ping DC-1's Private IP address [my example below]</p>
+
+
 
 
 
