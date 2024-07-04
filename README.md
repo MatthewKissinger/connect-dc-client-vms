@@ -40,7 +40,7 @@
 
 
 
-<h3>2)Ping DC-1 from Client-1's powershell command line interface</h3>
+<h3>2) Ping DC-1 from Client-1's powershell command line interface</h3>
 
 <p>Copy DC-1's private IP address from the Virtual Machine screen in Microsoft Azure's online Portal</p>
 
@@ -50,7 +50,13 @@
 
 <p>From the Remote Connection of Client-1, open Windows Powershell and ping DC-1's Private IP address [my example below]</p>
 
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/12ef79ed-cb61-45ab-809b-fb69c04b975f)
 
+<p>Since we haven't enabled ICMPv4 in the Domain Controller's Windows Firewall, we should see a 100% loss in packets Received.</p>
+
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/889fcd54-aecc-4872-a2d7-32e3303978a2)
+
+<h3>3) Enable ICMPv4 Communication Protocol in the Domain Controller Virtual Machine</h3>
 
 
 
