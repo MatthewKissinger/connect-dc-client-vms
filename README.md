@@ -83,17 +83,15 @@
 
 <p>Now with the ICMPv4 Inbound Rules enabled head back into your Client-1 virtual machine</p>
 
+<p>And ping the Private IP Address of the Domain Controller again</p>
 
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/c3510a41-06eb-460e-98fa-720fee50f2a4)
 
+<p>With ICMPv4 enabled on the Domain Controller you should see a 0% loss in packets Sent and Received. </p>
 
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/977e882c-3074-4d63-ba77-1d7c9137a7c9)
 
-
-
-
-
-
-
-
+<p>Now the Domain Controller and Client-1 computers can communicate on the network and allow other services like Active Directory to be enabled.</p>
 
 <h4>Thank you for following along!</h4>
   
