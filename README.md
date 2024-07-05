@@ -36,9 +36,8 @@
 <p>The ping command operates using ICMP. In order to use ping to request a connection we will have to activate ICMPv4 on the Domain Controller.</p>
 
 <h3> 1) Connect to both the DC-1 and Client-1 Virtual Machines via Remote Desktop Connection</h3>
+
 <p>If you haven't already, here are the steps to do so in the previous tutorial: (https://github.com/MatthewKissinger/rmdc-to-azure-vm) </p>
-
-
 
 <h3>2) Ping DC-1 from Client-1's powershell command line interface</h3>
 
@@ -57,6 +56,41 @@
 ![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/889fcd54-aecc-4872-a2d7-32e3303978a2)
 
 <h3>3) Enable ICMPv4 Communication Protocol in the Domain Controller Virtual Machine</h3>
+
+<p>In your Domain Controller Virtual Machine type wf.msc in the windows search bar</p>
+
+<p>This search command will pull up the Windows Defender Firewall with Advanced Security. Open the program.</p>
+
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/d8803abb-cbc1-4018-ab39-ec0d0a7b27a1)
+
+<p>Click on Inbound Rules</p>
+
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/a55c6d52-e7c1-4a44-bf13-d5012b5f7458)
+
+<p>And then click on the Protocol Column at the top to sort by protocol</p>
+
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/f854ee72-d299-42bb-9089-ba9e0c59d930)
+
+<p>Only one of the ICMPv4 Protocols are enabled by default: Core Networking - Destination Unreachable</p>
+
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/dd4e03fa-3fb6-437a-81ff-5667ef6bfde5)
+
+<p>Right click on each ICMPv4 Inbound Rule and select Enable Rule from the popup menu. </p>
+
+<p>Your ICMPv4 Rules should now all have a green checkmark like this: </p>
+
+![image](https://github.com/MatthewKissinger/connect-dc-client-vms/assets/48774883/65e451b9-7680-4484-b332-4b16c9ca4ccb)
+
+<p>Now with the ICMPv4 Inbound Rules enabled head back into your Client-1 virtual machine</p>
+
+
+
+
+
+
+
+
+
 
 
 
