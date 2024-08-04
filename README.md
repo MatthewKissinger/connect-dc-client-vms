@@ -4,7 +4,7 @@
 
 <h1>Microsoft Azure Tutorial</h1>
 <h2>Establish connection between Domain Controller and Client VMs</h2>
-<p>This tutorial outlines the prerequisites and the process of establishine a connection between a Domain Controller and Client virtual machines in the cloud computing platform Microsoft Azure with Microsoft Remote Desktop Connection.</p> 
+<p>This tutorial outlines the prerequisites and the process of establishing a connection between a Domain Controller and Client virtual machines in the cloud computing platform Microsoft Azure with Microsoft Remote Desktop Connection.</p> 
 
 <h2>Environments and Technologies Used</h2>
 
